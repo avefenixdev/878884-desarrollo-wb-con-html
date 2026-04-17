@@ -1,0 +1,29 @@
+* { /* Usarlo con cuidado (Consume muchos recursos) */    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tipografías seguras (Quiere decir que todos los Sistemas operativos las tienen) */
+/*
+! Qué tipografía usar en las páginas web y aplicaciones en general
+
+- Tipografías sin serif. Para cuerpos de texto, siempre tipografías sin serif
+
+ */
+
+/* regla css */
+h1 { /* <---------- selector */
+/* propiedad: valor */
+    color: darkred; /* <------ declaración */
+    /*             1        2      familia-tipografica */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: blue;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+h3 {
+    color: darkgreen;
+}

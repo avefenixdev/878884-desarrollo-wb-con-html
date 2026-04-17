@@ -10,6 +10,9 @@
 
  */
 
+/* 
+    ! Selectores de etiquetas (h1, p, strong, em, ul, li) 
+*/
 /* regla css */
 h1 { /* <---------- selector */
 /* propiedad: valor */
@@ -27,3 +30,31 @@ h2 {
 h3 {
     color: darkgreen;
 }
+
+/* 
+    ! Selector de clase. Puedo utilizarlo infinitivamente. Puedo incluso por elemento html tener varias clases (Para poder seleccionar una clase uso el punto)
+*/
+
+.subtitulo-especial {
+    color: blueviolet;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+/* clases utilitarias (Una clase solo tiene una responsabilidad) */
+.color-violeta {
+    color: blueviolet;
+}
+
+.capitalizado {
+    text-transform: capitalize; /* pone de cada palabra la inicial en mayuscula */
+}
+
+.mayusculas {
+    text-transform: uppercase; /* pone todo en mayusculas */
+}
+
+.cursiva {
+    font-style: italic;
+}
+

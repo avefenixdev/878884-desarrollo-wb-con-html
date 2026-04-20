@@ -14,6 +14,7 @@
     ! Selectores de etiquetas (h1, p, strong, em, ul, li) 
 */
 /* regla css */
+/* (0,0,1) -> 001 */
 h1 { /* <---------- selector */
 /* propiedad: valor */
     color: darkred; /* <------ declaración */
@@ -34,7 +35,7 @@ h3 {
 /* 
     ! Selector de clase. Puedo utilizarlo infinitivamente. Puedo incluso por elemento html tener varias clases (Para poder seleccionar una clase uso el punto)
 */
-
+/* (0,1,0) -> 010 */
 .subtitulo-especial {
     color: blueviolet;
     font-style: italic;
@@ -58,3 +59,9 @@ h3 {
     font-style: italic;
 }
 
+/* El sector de ID -> Se selecciona a traves del numeral */
+/* El identificador se puede solo usar una vez en el mismo doc html */
+/* (1,0,0) -> 100 */
+#subtitulo-clave {
+    color: darkorange;
+}

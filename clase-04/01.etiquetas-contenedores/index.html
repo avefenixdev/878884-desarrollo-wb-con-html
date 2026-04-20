@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas contenedores</title>
+</head>
+<body>
+    <h1>Etiquetas contenedores</h1>
+    <hr>
+
+    <!-- HTML4 ---- div (división) -- no tienen peso semantico -->
+
+    <div id="cabecera">
+        <div id="navegacion">
+            <!-- ul>(li>a)*4 -->
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="principal">
+        <!-- h2{Artículos destacados} -->
+        <h2>Artículos destacados</h2>
+        <!-- (.articulo>h3{Articulo $}+p{Este es el $ parrafo del artículo})*4 -->
+        <div class="articulo">
+            <h3>Articulo 1</h3>
+            <p>Este es el 1 parrafo del artículo</p>
+        </div>
+        <div class="articulo">
+            <h3>Articulo 2</h3>
+            <p>Este es el 2 parrafo del artículo</p>
+        </div>
+        <div class="articulo">
+            <h3>Articulo 3</h3>
+            <p>Este es el 3 parrafo del artículo</p>
+        </div>
+        <div class="articulo">
+            <h3>Articulo 4</h3>
+            <p>Este es el 4 parrafo del artículo</p>
+        </div>
+    </div>
+
+    <div id="pie">
+        <p>&copy Todo los derechos reservaos 2026</p>
+    </div>
+
+    <!-- HTML5 --- etiquetas semánticas ---- main, nav, header, footer... -->
+    <!-- Las etiquetas semanticas ayudan a los buscadores a entender la organización del sitio -->
+    
+    <!-- visual -->
+    <!-- significado -->
+
+    <header>
+        <nav>
+            <!-- ul>(li>a)*4 -->
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- h2{Artículos destacados} -->
+        <h2>Artículos destacados</h2>
+        <!-- (.articulo>h3{Articulo $}+p{Este es el $ parrafo del artículo})*4 -->
+        <article>
+            <h3>Articulo 1</h3>
+            <p>Este es el 1 parrafo del artículo</p>
+        </article>
+        <articule>
+            <h3>Articulo 2</h3>
+            <p>Este es el 2 parrafo del artículo</p>
+        </articule>
+        <article>
+            <h3>Articulo 3</h3>
+            <p>Este es el 3 parrafo del artículo</p>
+        </article>
+        <articule>
+            <h3>Articulo 4</h3>
+            <p>Este es el 4 parrafo del artículo</p>
+        </articule>
+    </main>
+
+    <footer>
+        <p>&copy Todo los derechos reservaos 2026</p>
+    </footer>
+    
+    
+</body>
+</html>

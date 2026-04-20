@@ -1,0 +1,54 @@
+div {
+    background-color: crimson;
+    /* propiedad width, height */
+    /* height: 210px; */
+    width: 510px;
+    color: white;
+
+    /* shorthand -> manera corta */
+    border: 10px solid black; /* | 4 lados */
+    /* border-top: 10px solid black; | 1 solo lado */
+    border-top-color: orange;
+
+
+    /* padding -> espacio entre el contenido y el borde */
+    /* generar aire entre el contenido el borde del contenedor */
+    /* shorthand -> manera corta */
+    padding: 50px;
+    padding-top: 10px;
+
+    /* margin -> espacio entre el borde y el resto de los elemento que están al de nuestro elemento  */
+    /* shorthand -> manera corta */
+    /* margin: 100px; */
+    /* según el sentido de las agujas del reloj (sentido horario) */
+    /*      top right bottom left */
+    margin: 10px 20px 5px 50px;
+    /*    top right/left bottom */
+    /* margin: 10px 5px 50px; */
+    /*   top/bottom right/left */
+    /* margin: 10px 50px; */
+
+}
+
+p {
+    background-color: black;
+    color: white;
+}
+
+em {
+    background-color: crimson;
+    margin: 50px; /* margin arriba y abajo no son tenidos en cuenta en elementos de línea */
+    padding: 10px; /* Todos los lados */
+    border: 3px solid blue;
+}
+
+/* Margin caso especial (Centrado de elementos de bloque) */
+
+main {
+    background-color: darkolivegreen;
+    height: 50px;
+    width: 200px;
+    /* centrado de 2 cajas */
+    margin: auto;
+    margin-top: 50px;
+}

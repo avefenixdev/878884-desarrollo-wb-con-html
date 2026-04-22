@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML (GET | POST)</title>
+</head>
+<body>
+    <h1>Formularios HTML (GET | POST)</h1>
+    <hr>
+
+    <p>Para crear un formulario se utiliza la etiqueta &lt;form&gt;</p>
+
+    <h2>Atributos de la etiqueta &lt;form&gt;</h2>
+
+    <ul>
+      <li><strong>action:</strong> Es la ruta (url) a donde se va a enviar la información recopilada por el formulario</li>
+      <li>
+        <strong>method:</strong> Es como se va a enviar la información. Método GET y el método POST. A traves de 2 verbos voy a poder enviar la información recopilada
+        <ul>
+          <li><strong>Método (verbo) GET:</strong> Se envía la información por la URL (Default)</li>
+          <li><strong>Método (verbo) POST:</strong> Se envía la información a través del cuerpo del documento HTML (Más seguro)</li>
+        </ul>
+      </li>
+      <li><strong>target:</strong> El comportamiento que tenía los links (anchor tags). Si le coloco el <em>target="_blank"</em> se abre en otra pestaña. Si le coloco <em>target="_self"</em> sea abre en la mis ventada (por defecto)</li>
+    </ul>
+
+    <h2>Formulario al enviarse por cualqueir de los 2 métodos va a generar (Query String)</h2>
+
+    <p>Cuando envío la información a través del método GET o POST. El formulario automaticamente arma la URL para enviar la información. A esa URL completa se llama <a href="https://es.wikipedia.org/wiki/Query_string" target="_blank">(Query String)</a></p>
+
+    <pre>
+      <code>
+       www.sitiodeejemplo.net/pagina.php<b>?nombredevalor1=valor1&nombredevalor2=valor2</b>
+       www.sitiodeejemplo.net/pagina.php<b>?nombre=Maximiliano&apellido=Principe</b>
+       www.sitiodeejemplo.net/pagina.php<b>?busqueda=Manzana</b>
+      </code>
+    </pre>
+
+    <h2>Etiqueta &lt;input&gt;</h2>
+
+    <h2>Etiqueta &lt;label&gt;</h2>
+
+    <!-- --------------------------------------- -->
+    <!-- ! Buscadores --> 
+    <!-- --------------------------------------- -->
+
+    <!-- https://www.google.com/search?q=gatito -->
+
+    <h2>Formularios GET</h2>
+
+    <h3>Formulario para ahcer una búsqueda en Google</h3>
+    
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+
+       <div>
+         <label for="lbl-busqueda">Palabra a buscar</label>
+         <input type="text" id="lbl-busqueda" name="q" placeholder="Ej: bitcoin, gatito, perrito">
+       </div>
+
+        <button type="reset">Limpiar</button>
+        <button type="submit">Buscar</button>
+
+    </form>
+
+    <!-- Hacer un formulario pero para buscar en Yahoo -->
+    <!-- https://espanol.search.yahoo.com/search?p=Pizza -->
+
+    <!-- Hacer un formulario pero para buscar en Bing -->
+    <!-- Hacer un formulario pero para buscar en Duck Duck Go -->
+
+    <!-- --------------------------------------- -->
+    <!-- ! Contacto --> 
+    <!-- --------------------------------------- -->
+
+
+    <h3>Formulario de contacto</h3>
+    <!-- https://usebasin.com/ -->
+    <!-- https://formspree.io/ -->
+    <form action="https://usebasin.com/f/ae8408d3e4db" method="post">
+
+        <div>
+            <input type="text" name="nombre">
+        </div>
+        <div>
+            <input type="text" name="apellido">
+        </div>
+        <div>
+            <input type="email" name="correo">
+        </div>
+        <div>
+            <input type="password" name="dato-secreto">
+        </div>
+        <div>
+            <input type="number" name="edad">
+        </div>
+
+        <div>
+            <textarea name="informacion" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <button>Enviar</button>
+
+    </form>
+
+
+    <h2>Formularios POST</h2>
+
+    
+</body>
+</html>

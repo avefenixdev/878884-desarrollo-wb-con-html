@@ -18,8 +18,8 @@
       <li>
         <strong>method:</strong> Es como se va a enviar la información. Método GET y el método POST. A traves de 2 verbos voy a poder enviar la información recopilada
         <ul>
-          <li><strong>Método (verbo) GET:</strong> Se envía la información por la URL (Default)</li>
-          <li><strong>Método (verbo) POST:</strong> Se envía la información a través del cuerpo del documento HTML (Más seguro)</li>
+          <li><strong>Método (verbo) GET:</strong> Se envía la información por la URL (Default) - busqueda, fitros</li>
+          <li><strong>Método (verbo) POST:</strong> Se envía la información a través del cuerpo del documento HTML (Más seguro) - sensibles - tarjetas credito, dni, contraseñas</li>
         </ul>
       </li>
       <li><strong>target:</strong> El comportamiento que tenía los links (anchor tags). Si le coloco el <em>target="_blank"</em> se abre en otra pestaña. Si le coloco <em>target="_self"</em> sea abre en la mis ventada (por defecto)</li>
@@ -45,11 +45,13 @@
     <!-- ! Buscadores --> 
     <!-- --------------------------------------- -->
 
+    <!-- https://www.google.com/search?q=pixel -->
+
     <!-- https://www.google.com/search?q=gatito -->
 
     <h2>Formularios GET</h2>
 
-    <h3>Formulario para ahcer una búsqueda en Google</h3>
+    <h3>Formulario para hacer una búsqueda en Google</h3>
     
     <form action="https://www.google.com/search" method="GET" target="_blank">
 
@@ -63,8 +65,13 @@
 
     </form>
 
+    <!-- si los links o formularios van a una página externa - blank -->
+    <!-- si los links o formularios te dirigen a contenido interno de tu sitio - self (defecto) -->
+
     <!-- Hacer un formulario pero para buscar en Yahoo -->
     <!-- https://espanol.search.yahoo.com/search?p=Pizza -->
+    <!-- https://espanol.search.yahoo.com/search?p=action -->
+    <!-- https://espanol.search.yahoo.com/search?p=perritos -->
 
     <!-- Hacer un formulario pero para buscar en Bing -->
     <!-- Hacer un formulario pero para buscar en Duck Duck Go -->
@@ -73,11 +80,10 @@
     <!-- ! Contacto --> 
     <!-- --------------------------------------- -->
 
-
-    <h3>Formulario de contacto</h3>
+    <h3>Formulario de contacto (POST)</h3>
     <!-- https://usebasin.com/ -->
     <!-- https://formspree.io/ -->
-    <form action="https://usebasin.com/f/ae8408d3e4db" method="post">
+    <form action="https://usebasin.com/f/161b389d0f48" method="post">
 
         <div>
             <input type="text" name="nombre">
@@ -99,13 +105,9 @@
             <textarea name="informacion" id="" cols="30" rows="10"></textarea>
         </div>
 
-        <button>Enviar</button>
+        <button type="submit">Enviar</button>
 
-    </form>
-
-
-    <h2>Formularios POST</h2>
-
+    </form>   
     
 </body>
 </html>

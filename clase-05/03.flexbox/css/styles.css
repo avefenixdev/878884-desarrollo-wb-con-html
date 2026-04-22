@@ -1,0 +1,88 @@
+:root { /* :root es un poco más especifico que el selector de etiqueta html*/
+    /* custom properties (variables en CSS) */
+    --colorPrincipal: #EB4C4C; 
+    --colorSecundario: #FFA6A6;
+    --colorTerciario: #FFEDC7;
+    --valorCero: 2;
+}
+
+/* https://colorhunt.co/palette/eb4c4cff7070ffa6a6ffedc7 */
+/* https://meyerweb.com/eric/tools/css/reset/ */
+/* https://www.aluracursos.com/blog/reset-css-que-es-ejemplos-como-crear-y-utilizar */
+
+/* Resetear estilos de navegador (Dejar todo mi html sin estilos que me provee las hojas de estilo del navegador */
+* {
+    margin: var(--valorCero);
+    padding: var(--valorCero);
+    /* box-sizing: content-box; */ /* tenemos que hacer los calculos nosotros, restar el padding y el borde al ancho y alto del elemento */
+    box-sizing: border-box; /* Hace las cuentas por nosotros */
+}
+
+body {
+    /* bgc */
+    background-color: var(--colorTerciario);
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: darkblue;
+    margin-bottom: 2px;
+}
+
+.cuadrado-content {
+    box-sizing: content-box;
+    padding: 20px;
+    border: 5px solid red;
+    width: 150px; /* 200 - 20x2 - 5x2 */
+    height: 150px; /* 200 - 20x2 - 5x2 */
+}
+
+.cuadrado-border {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 5px solid red;
+}
+
+/* ! FLEXBOX */
+/* * Siempre tengo que pensar cuando pienso en flebox en una dinamica de elemento padre (flex-container) y elemento hijo (flex-item) */
+/* * Distribuyo espacio disponible */
+/* * En flexbox tengo 2 ejes
+    ? Eje principal (main) <<<---- Siempre modifico y defino este eje
+    ? Eje traversal/opuesto/cruzado (opuesto/cruzado)
+*/
+
+/* ! Casi todas las propiedades flexbox van aplicadas sobre el padre (Contenedor) */
+/* https://docs.emmet.io/cheat-sheet/ */
+
+.padre {
+    display: flex;
+    /* !flex-direction */
+    flex-direction: row; /* row (defecto) | column | row-reverse | column-reverse */
+    /* !flex-wrap */
+    flex-wrap: nowrap; /* nowrap (defecto) | wrap | wrap-reverse */
+
+    /* ! justify-content (Centrado horizontal) */
+    justify-content: space-evenly; /* start (default) | end | center | space-around | space-between | space-evenly */
+    /* ! align items (Centrado vertical) */
+    align-items: start; /* streach (default) | start | end */
+
+    height: 500px;
+}
+
+.hijo {
+    background-color: var(--colorSecundario);
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #eee;
+
+    width: 300px;
+}
+
+.hijo1 {
+    height: 200px;
+}
+
+/* dzhavat.css-flexbox-cheatsheet */

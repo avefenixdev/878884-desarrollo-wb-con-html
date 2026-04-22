@@ -1,12 +1,12 @@
 :root { /* :root es un poco más especifico que el selector de etiqueta html*/
     /* custom properties (variables en CSS) */
-    --colorPrincipal: #EB4C4C; 
+    --colorPrincipal: #EB4C4C;
     --colorSecundario: #FFA6A6;
     --colorTerciario: #FFEDC7;
-    --valorCero: 2;
+    --valorCero: 0;
 }
 
-/* https://colorhunt.co/palette/eb4c4cff7070ffa6a6ffedc7 */
+/* https://colorhunt.co/ */
 /* https://meyerweb.com/eric/tools/css/reset/ */
 /* https://www.aluracursos.com/blog/reset-css-que-es-ejemplos-como-crear-y-utilizar */
 
@@ -55,17 +55,17 @@ body {
 /* ! Casi todas las propiedades flexbox van aplicadas sobre el padre (Contenedor) */
 /* https://docs.emmet.io/cheat-sheet/ */
 
-.padre {
+.padre { /* main */
     display: flex;
     /* !flex-direction */
     flex-direction: row; /* row (defecto) | column | row-reverse | column-reverse */
     /* !flex-wrap */
-    flex-wrap: nowrap; /* nowrap (defecto) | wrap | wrap-reverse */
+    /* flex-wrap: nowrap; */ /* nowrap (defecto) | wrap | wrap-reverse */
 
     /* ! justify-content (Centrado horizontal) */
-    justify-content: space-evenly; /* start (default) | end | center | space-around | space-between | space-evenly */
+    /* justify-content: space-evenly; */ /* start (default) | end | center | space-around | space-between | space-evenly */
     /* ! align items (Centrado vertical) */
-    align-items: start; /* streach (default) | start | end */
+    /* align-items: start; */ /* streach (default) | start | end */
 
     height: 500px;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .hijo1 {
-    height: 200px;
+    /* height: 200px; */
 }
 
 /* dzhavat.css-flexbox-cheatsheet */
